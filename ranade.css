@@ -1,0 +1,88 @@
+/**
+ * @license
+ *
+ * Font Family: Ranade
+ * Designed by: Easha Ranade, Indian Type Foundry
+ * URL: https://www.fontshare.com/fonts/ranade
+ * © 2024 Indian Type Foundry
+ *
+ * Font Styles:
+ * Ranade Variable(Variable font)
+ * Ranade Variable Italic(Variable font)
+ * Ranade Thin
+ * Ranade Thin Italic
+ * Ranade Light
+ * Ranade Light Italic
+ * Ranade Regular
+ * Ranade Italic
+ * Ranade Medium
+ * Ranade Medium Italic
+ * Ranade Bold
+ * Ranade Bold Italic
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 700.0)
+
+*/
+
+@font-face {
+  font-family: 'Ranade-Variable';
+  src: url('../fonts/Ranade-Variable.woff2') format('woff2'),
+       url('../fonts/Ranade-Variable.woff') format('woff'),
+       url('../fonts/Ranade-Variable.ttf') format('truetype');
+       font-weight: 100 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 700.0)
+
+*/
+
+@font-face {
+  font-family: 'Ranade';
+  src: url('./Ranade-VariableItalic.woff2') format('woff2'),
+       url('./Ranade-VariableItalic.woff') format('woff'),
+       url('./Ranade-VariableItalic.ttf') format('truetype');
+       font-weight: 100 700;
+       font-display: swap;
+       font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
