@@ -1,23 +1,5 @@
 
-@font-face {
-    font-family: 'ClashDisplay';
-    src: url('../Bootstrap/Fonts/ClashDisplay-Bold.woff2') format('woff2'),
-         url('../Bootstrap/Fonts/ClashDisplay-Bold.woff') format('woff'),
-         url('../Bootstrap/Fonts/ClashDisplay-Regular.ttf') format('truetype');
-         font-weight: 700;
-         font-display: swap;
-         font-style: normal;
-  }
 
-  @font-face {
-    font-family: 'Ranade';
-    src: url('./Ranade-VariableItalic.woff2') format('woff2'),
-         url('./Ranade-VariableItalic.woff') format('woff'),
-         url('./Ranade-VariableItalic.ttf') format('truetype');
-         font-weight: 100 700;
-         font-display: swap;
-         font-style: italic;
-  }
   
 
 
@@ -61,6 +43,7 @@ img{
 }
 .theme-shadow{
     box-shadow: var(--box-shadow);
+    /* z-index: -2; */
 }
 .section-padding{
     padding-top: 140px;
@@ -99,6 +82,40 @@ img{
     color: white;
     
 }
+    /* image zoom */
+
+    .image-zoom{
+        position: relative;
+        overflow: hidden;
+    }
+    .image-zoom-wrapper {
+        overflow: hidden;
+        position: relative;
+    }
+    .image-zoom-wrapper img{
+        transition: var(--transition);
+    }
+
+    .image-zoom:hover .image-zoom-wrapper img{
+        transform: scale(1.1);
+    }
+
+    /* portfolio */
+    .portfolio-item .iconbox{
+        background-color: var(--c-brand);
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        
+    }
+    .portfolio-item:hover .iconbox{
+        opacity: 1;
+        top: 50%;
+    }
+
 /* hero */
 
 #hero{
@@ -180,4 +197,52 @@ img{
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(./counter.jpg);
     background-size: cover;
     background-position: center;
+}
+
+
+/* review */
+.review-head{
+    position: relative;
+}
+.review-head::after{
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -14;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+}
+
+.review small{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--c-brand);
+}
+
+/* contact */
+
+#contact{
+    position: relative;
+    z-index: 2;
+}
+#contact::after{
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(./counter.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contact .form-control{
+    border-radius: 0;
+}
+#contact .form-control:focus{
+    box-shadow: none;
+    border-color: var(--c-brand);
 }
